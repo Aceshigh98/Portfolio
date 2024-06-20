@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Body styles */
+body {
+  @apply bg-black;
+}
+
+section {
+  @apply text-white;
+}
+
+/* nav styles */
+nav {
+  @apply bg-black;
+}
+
+nav a {
+  @apply text-white font-normal cursor-pointer;
+}
+
+/* Custom nav-link styles */
+.nav-link {
+  @apply relative inline-block no-underline text-inherit transition-colors duration-100 ease-in-out;
+}
+
+.nav-link::after {
+  content: '';
+  @apply absolute block h-[2px] bg-primary transition-all duration-500 ease-in-out;
+  width: 0;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  font-weight: 900;
+  left: 0;
+  @apply bg-primary;
+}
+
