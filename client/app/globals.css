@@ -11,6 +11,17 @@ section {
   @apply text-white;
 }
 
+h1 {
+  @apply text-6xl lg:text-4xl md:text-2xl font-bold;
+}
+
+span{
+  @apply text-primary;
+}
+
+h3 {
+    @apply text-primary;
+}
 /* nav styles */
 nav {
   @apply bg-black;

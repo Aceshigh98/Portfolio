@@ -1,8 +1,11 @@
 import React from 'react';
 
+/**
+ * Represents the props for the NavLink component.
+ */
 interface NavLinkProps {
-  page: string;
-  name: string;
+    page: string;
+    name: string;
 }
 
 const NavLink: React.FC<NavLinkProps> = ({ page, name }) => {
@@ -11,6 +14,7 @@ const NavLink: React.FC<NavLinkProps> = ({ page, name }) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+      
     }
   };
 

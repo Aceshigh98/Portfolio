@@ -9,9 +9,9 @@ export default function Home() {
   return (
     <main className=" h-fit">
       <HomeSection id={"home"}/>
+      <AboutSection id={"about"}/>
       <PortfolioSection id={"portfolio"}/>
       <SkillsSection id={"skills"}/>
-      <AboutSection id={"about"}/>
       <ContactSection id={"contact"}/> 
     </main>
   );
