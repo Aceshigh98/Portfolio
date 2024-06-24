@@ -1,11 +1,11 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import Logo from './ui/NavLogoModel';
+import Logo from './ui/Home/NavLogoModel';
 import { motion } from 'framer-motion';
 
 //Components
-import NavLink from './ui/NavLink';
+import NavLink from './ui/Home/NavLink';
 
 
 const Navbar = () => {

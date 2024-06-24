@@ -1,10 +1,10 @@
 import React from 'react'
 
 //Components
-import {NavTitle} from '..//ui/NavTitle';
-import HomeModel from '../ui/HomeModel'
-import HomeTextLeft from '../ui/HomeTextLeft';
-import HomeTextRight from '../ui/HomeTextRight';
+import {NavTitle} from '../ui/Home/NavTitle';
+import HomeModel from '../ui/Home/HomeModel'
+import HomeTextLeft from '../ui/Home/HomeTextLeft';
+import HomeTextRight from '../ui/Home/HomeTextRight';
 
 
 const HomeSection = ({id}: {id:string}) => {

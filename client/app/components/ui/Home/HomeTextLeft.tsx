@@ -5,7 +5,7 @@ import { Button } from './BorderButton';
 
 const HomeTextLeft = () => {
 
-  const page = 'contact';
+  const page: string = 'contact';
 
   // Scroll to section
   const scrollToSection = (id: string) => {
@@ -22,7 +22,7 @@ const HomeTextLeft = () => {
           <h1>
             Hey There,
             <br />
-            <span>I'm Brannon</span>
+            <span>I&apos;m Brannon</span>
           </h1>
           <Button
             borderRadius="1rem"
@@ -30,12 +30,12 @@ const HomeTextLeft = () => {
             borderClassName="h-20 w-20 opacity-[0.8] bg-[radial-gradient(var(--primary)_40%,transparent_60%)]"
             containerClassName="bg-transparent relative text-lg h-[50px] w-40 p-[2px] overflow-hidden mt-4"
             href={`#${page}`}
-            onClick={(e) => {
+            onClick={(e:any) => {
               e.preventDefault();
               scrollToSection(page);
             }}
           >
-            Let's Connect
+            Let&apos;s Connect
           </Button>
     </div>
   );
