@@ -39,7 +39,7 @@ const PortfolioSection = ({ id }: { id: string }) => {
   };
 
   return (
-    <section id={id} className="h-fit">
+    <section id={id} className="h-fit pt-40">
       <PortfolioModel />
       <PortfolioTitle title="My Projects" />
       <div className="grid grid-cols-2 gap-[40px] justify-items-center pb-60 pl-40 pr-40 lg:grid-cols-1 lg:gap-10 lg:pb-20 lg:pl-10 lg:pr-10">

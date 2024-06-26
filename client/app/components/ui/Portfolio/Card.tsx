@@ -24,8 +24,8 @@ function Card({ title, description, image, link, github }: CardProps) {
                     className="rounded-lg object-cover h-[100%] w-[80%] shadow-md"
                 />
             </div>
-            <h3 className="text-2xl font-bold mb-2">{title}</h3>
-            <p className="mb-4">{description}</p>
+            <h3 className="text-4xl font-bold mb-2">{title}</h3>
+            <p className="mb-4 text-lg">{description}</p>
             <div className="flex justify-center space-x-4">
                 {link && (
                     <a href={link} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center h-10 w-[125px] bg-primary rounded-3xl hover:bg-white hover:text-primary">

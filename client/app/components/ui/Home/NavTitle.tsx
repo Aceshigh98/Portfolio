@@ -14,7 +14,7 @@ export function NavTitle() {
     },
   ];
 return (
-    <div className="fixed left-0 top-0 ml-[50px] items-center justify-center w-fit z-30">
+    <div className="absolute left-0 top-0 ml-[50px] items-center justify-center w-fit z-30">
         <TypewriterEffectSmooth
             words={words}
             className="text-2xl lg:text-lg md:text-sm dark:text-white text-black font-bold"
