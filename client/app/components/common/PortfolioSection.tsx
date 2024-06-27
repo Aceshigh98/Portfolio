@@ -4,6 +4,7 @@ import React from 'react';
 import PortfolioTitle from '../ui/Portfolio/PortfolioTitle';
 import Card from '../ui/Portfolio/Card';
 import PortfolioModel from '../ui/Portfolio/PortfolioModel';
+import { MdConstruction } from "react-icons/md";
 
 const PortfolioSection = ({ id }: { id: string }) => {
   // Card Object
@@ -11,30 +12,34 @@ const PortfolioSection = ({ id }: { id: string }) => {
     card1: {
       title: 'Dashboard',
       description: 'This is a Dashboard that displays real time data of Bitcoin using a public REST-API that I built.',
-      image: '/Capture.png',  // Assuming you have placed this image in the public directory
+      image: '/Capture.png', 
+      icon: null,
       link: 'https://www.aceshighbitcoin.com',
       github: 'https://github.com/Aceshigh98/Bitcoin-Dashboard'
     },
     card2: {
       title: 'Hashview',
       description: 'This application allows you to monitor Bitcoin mining hardware using Luxor\'s API.',
-      image: '/Capture2.png',  // Assuming you have placed this image in the public directory
+      image: '/Capture2.png',  
+      icon: null,
       link: 'https://www.hash-view.com',
       github: 'https://github.com/Aceshigh98/Hashview'
     },
     card3: {
-      title: 'Dashboard',
-      description: 'This is a Bitcoin Dashboard that displays real time data of Bitcoin using a public REST-API that I built.',
-      image: '/Capture.png',  // Assuming you have placed this image in the public directory
-      link: 'https://www.aceshighbitcoin.com',
-      github: 'https://github.com/Aceshigh98/Bitcoin-Dashboard'
+      title: 'Workout Application',
+      description: 'This Application is currently under development! ',
+      icon: <MdConstruction className='h-[50%] w-full'/>,  
+      image: '',
+      link: '',
+      github: ''
     },
     card4: {
-      title: 'Hashview',
-      description: 'This application allows you to monitor mining hardware using Luxor\'s API.',
-      image: '/Capture2.png',  // Assuming you have placed this image in the public directory
-      link: 'https://www.hash-view.com',
-      github: 'https://github.com/Aceshigh98/Hashview'
+      title: 'Ecommerce Site',
+      description: 'This Application will be under development soon. Stay tuned!',
+      image: '',
+      icon: <MdConstruction className='h-[50%] w-full'/>, 
+      link: '',
+      github: ''
     }
   };
 
@@ -49,6 +54,7 @@ const PortfolioSection = ({ id }: { id: string }) => {
               key={key} 
               title={card.title} 
               description={card.description} 
+              icon={card.icon}
               image={card.image} 
               link={card.link} 
               github={card.github} 

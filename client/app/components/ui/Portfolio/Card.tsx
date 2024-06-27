@@ -9,20 +9,28 @@ import { CgWebsite } from "react-icons/cg";
 type CardProps = {
     title: string;
     description: string;
+    icon: React.ReactNode;
     image: string;
     link: string;
     github: string;
 };
 
-function Card({ title, description, image, link, github }: CardProps) {
+function Card({ title, description, image, link, github, icon }: CardProps) {
     return (
         <div className="flex flex-col h-full w-full p-10 border border-primary backdrop-filter backdrop-blur-lg bg-opacity-10 bg-slate-100 rounded-2xl shadow-md mx-auto justify-center text-center z-20">
             <div className="flex h-fit w-full mb-4 justify-center">
-                <img
+                
+                {icon ? (
+                    <div className="flex items-center justify-center h-[100%] w-[80%] rounded-full mr-2">
+                        {icon}
+                    </div>
+                ):<img
                     src={image}
                     alt={title}
                     className="rounded-lg object-cover h-[100%] w-[80%] shadow-md"
                 />
+                }
+
             </div>
             <h3 className="text-4xl font-bold mb-2">{title}</h3>
             <p className="mb-4 text-lg">{description}</p>

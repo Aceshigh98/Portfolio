@@ -12,7 +12,7 @@ section {
 }
 
 h1 {
-  @apply text-6xl lg:text-4xl md:text-2xl font-bold;
+  @apply text-6xl lg:text-4xl lg:text-2xl font-bold;
 }
 
 span{
@@ -22,6 +22,8 @@ span{
 h3 {
     @apply text-primary;
 }
+
+
 /* nav styles */
 nav {
   @apply bg-black;
@@ -47,5 +49,11 @@ nav a {
   font-weight: 900;
   left: 0;
   @apply bg-primary;
+}
+
+/*About styles */
+
+p {
+  @apply text-lg;
 }
 
