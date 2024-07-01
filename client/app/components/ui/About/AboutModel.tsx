@@ -4,12 +4,16 @@ import React, { useState, useEffect } from 'react';
 import Spline from '@splinetool/react-spline';
 
 const AboutModel = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(0);
 
   useEffect(() => {
+    // This will only run on the client side
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
+
+    // Set the initial window width
+    setWindowWidth(window.innerWidth);
 
     window.addEventListener('resize', handleResize);
     return () => {
@@ -29,5 +33,6 @@ const AboutModel = () => {
 };
 
 export default AboutModel;
+
 
 
