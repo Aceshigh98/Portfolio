@@ -24,10 +24,10 @@ export default function RootLayout({
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <title>Portfolio</title>
+        <title>Brannon.Dev</title>
         <meta name="description" />
       </head>
-      <body className={rubik.className}>
+      <body className={rubik.className} suppressHydrationWarning={true}>
         <Navbar />
         {children}
         <Footer />

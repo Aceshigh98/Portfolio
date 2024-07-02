@@ -1,38 +1,49 @@
+'use client';
+
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 type Props = {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-};
+  form: HTMLFormElement;
+}
 
 export const useSubmit = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   const submitForm = async (props: Props) => {
+
+    // These values are set in the .env file
+    const serviceId = "service_uhnoh8g"
+    const templateId = "template_msi8g4l"
+    const userId = "YzywJatqjeavxwSIw"
+
+    if (!serviceId || !templateId || !userId) {
+      console.error('EmailJS is not configured properly.');
+      return;
+    }
+
     setLoading(true);
     try {
-      const res = await fetch('https://localhost:3000/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(props)
-      });
-      setLoading(false);
-      if (!res.ok) {
-        throw new Error('Something went wrong');
-      }
-    } catch (error) {
-      setError(error instanceof Error ? error.message : 'An error occurred while submitting the form');
+      await emailjs.sendForm(
+        serviceId,
+        templateId,
+        props.form,
+        userId
+      );
+      console.log('SUCCESS!');
+      setError(null);
+    } catch (error: unknown) {
+      console.log('FAILED...', error);
+      setError('Failed to send the message. Please try again.');
+    } finally {
       setLoading(false);
     }
-  };
+  } 
 
   return { loading, error, submitForm };
 };
+  
 
 
 

@@ -4,11 +4,11 @@
 
 /* Body styles */
 body {
-  @apply bg-black;
+  @apply bg-black dark:bg-white;
 }
 
 section {
-  @apply text-white;
+  @apply text-white dark:text-slate-900;
 }
 
 h1 {
@@ -26,12 +26,14 @@ h3 {
 
 /* nav styles */
 nav {
-  @apply bg-black;
+  @apply bg-black dark:bg-slate-900;
 }
 
 nav a {
   @apply text-white font-normal cursor-pointer;
 }
+
+
 
 /* Custom nav-link styles */
 .nav-link {
@@ -51,9 +53,11 @@ nav a {
   @apply bg-primary;
 }
 
-/*About styles */
 
+
+/*About styles */
 p {
   @apply text-lg;
 }
+
 

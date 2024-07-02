@@ -26,7 +26,7 @@ const HomeTextLeft = () => {
           </h1>
           <Button
             borderRadius="1rem"
-            className="bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl text-white flex items-center justify-center w-full h-full text-sm antialiased"
+            className="bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl text-white dark:text-white dark:bg-slate-900 flex items-center justify-center w-full h-full text-sm antialiased"
             borderClassName="h-20 w-20 opacity-[0.8] bg-[radial-gradient(var(--primary)_40%,transparent_60%)]"
             containerClassName="bg-transparent relative text-lg h-[50px] w-40 p-[2px] overflow-hidden mt-4"
             href={`#${page}`}
