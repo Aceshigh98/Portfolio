@@ -19,7 +19,7 @@ const PortfolioSection = ({ id }: { id: string }) => {
     },
     card2: {
       title: 'Hashview',
-      description: 'This application allows you to monitor Bitcoin mining hardware using Luxor\'s API. I have created a dummy account for you to test the application. Username: "demo" Password: "demo1234"',
+      description: 'This application allows you to monitor Bitcoin mining hardware using Luxor\'s API. I have created a dummy account for you to test the application. Username: "demo" Password: "!Demo1234!"',
       image: '/hashview.png',  
       icon: null,
       link: 'https://www.hash-view.com',
