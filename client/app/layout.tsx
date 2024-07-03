@@ -6,6 +6,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
+
 const rubik = Rubik({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -23,11 +24,11 @@ export default function RootLayout({
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" type="image/<generated>" sizes="<generated>" />
         <title>Brannon.Dev</title>
         <meta name="description" />
       </head>
-      <body className={rubik.className} suppressHydrationWarning={true}>
+      <body className={rubik.className}>
         <Navbar />
         {children}
         <Footer />

@@ -12,15 +12,15 @@ const PortfolioSection = ({ id }: { id: string }) => {
     card1: {
       title: 'Dashboard',
       description: 'This is a Dashboard that displays real time data of Bitcoin using a public REST-API that I built.',
-      image: '/Capture.png', 
+      image: '/dashboard.png', 
       icon: null,
       link: 'https://www.aceshighbitcoin.com',
       github: 'https://github.com/Aceshigh98/Bitcoin-Dashboard'
     },
     card2: {
       title: 'Hashview',
-      description: 'This application allows you to monitor Bitcoin mining hardware using Luxor\'s API.',
-      image: '/Capture2.png',  
+      description: 'This application allows you to monitor Bitcoin mining hardware using Luxor\'s API. I have created a dummy account for you to test the application. Username: "demo" Password: "demo1234"',
+      image: '/hashview.png',  
       icon: null,
       link: 'https://www.hash-view.com',
       github: 'https://github.com/Aceshigh98/Hashview'
@@ -44,7 +44,7 @@ const PortfolioSection = ({ id }: { id: string }) => {
   };
 
   return (
-    <section id={id} className="h-fit pt-40">
+    <section id={id} className="h-fit pt-40 lg:pt-20">
       <PortfolioModel />
       <PortfolioTitle title="My Projects" />
       <div className="grid grid-cols-2 gap-[40px] justify-items-center pb-60 pl-40 pr-40 lg:grid-cols-1 lg:gap-10 lg:pb-20 lg:pl-10 lg:pr-10">

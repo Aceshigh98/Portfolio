@@ -24,10 +24,10 @@ const PortfolioTitle = (props: Props) => {
         <SparklesCore
           background="transparent"
           minSize={0.4}
-          maxSize={1}
+          maxSize={1.5}
           particleDensity={1800}
           className="w-full h-full"
-          particleColor="white"
+          particleColor="#8D3AE2"
         />
  
         {/* Radial Gradient to prevent sharp edges */}

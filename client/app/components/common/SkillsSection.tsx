@@ -28,7 +28,7 @@ const SkillsSection = ({ id }: { id: string }) => {
   ];
 
   return (
-    <section id={id} className="h-fit flex flex-col justify-center text-center mx-auto pt-40">
+    <section id={id} className="h-fit flex flex-col justify-center text-center mx-auto pt-20 lg:pt-0">
       <h1 className="text-primary">Skills and Technologies</h1>
       <div className="ml-[20%] mr-[20%]">
         <TextGenerateEffect words={words} />
