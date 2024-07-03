@@ -7,7 +7,7 @@ import {FaGithub, FaLinkedin} from 'react-icons/fa'
 const AboutSection = ({id}: {id:string}) => {
 return (
     <section id={id} className=' h-fit flex flex-col gap-10 text-center justify-center justify-items-center pt-40'>
-        <h1>WHO AM I?</h1>
+        <h1>Who Am I?</h1>
         <p className='text-primary w-[50%] mx-auto text-wrap text-2xl font-bold '> I am a Software Engineer and full-stack developer who has been working with code for 6+ years. I have experience with frontend technologies, NoSQL Databases, and backend services.</p>
         <h1>Need My Resume?</h1>
         <div className='text-white dark:text-black flex items-center gap-10 mx-auto'>
