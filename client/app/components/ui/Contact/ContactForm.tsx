@@ -1,12 +1,13 @@
 'use client';
 
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { useSubmit } from '@/app/hooks/useSubmit';
 
 const ContactForm: React.FC = () => {
   const form = useRef<HTMLFormElement>(null);
 
-  const { loading, error, submitForm } = useSubmit();
+  const { loading, error, status, submitForm } = useSubmit();
+
 
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -61,6 +62,7 @@ const ContactForm: React.FC = () => {
             {loading ? 'Sending...' : 'Send'}
           </button>
         </div>
+        {status && <p className="text-green-500">Message sent successfully!</p>}
         {error && <p className="text-red-500">{error}</p>}
       </form>
     </div>

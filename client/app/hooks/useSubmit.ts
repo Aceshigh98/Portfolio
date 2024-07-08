@@ -10,6 +10,8 @@ type Props = {
 export const useSubmit = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [status, setStatus] = useState(false);
+
 
   const submitForm = async (props: Props) => {
 
@@ -32,6 +34,7 @@ export const useSubmit = () => {
         userId
       );
       console.log('SUCCESS!');
+      setStatus(true);
       setError(null);
     } catch (error: unknown) {
       console.log('FAILED...', error);
@@ -41,7 +44,7 @@ export const useSubmit = () => {
     }
   } 
 
-  return { loading, error, submitForm };
+  return { loading, error, status, submitForm };
 };
   
 

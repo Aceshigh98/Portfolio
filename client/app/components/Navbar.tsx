@@ -55,7 +55,7 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className={`flex flex-row items-center justify-center space-x-5 fixed top-0 left-0 right-0 z-30 transition-all duration-300${scrolled ? ' w-[40%] md:w-[75%] h-[100px] lg:space-x-2 lg:h-[50px] mt-[50px] lg:text-[10px] mx-auto rounded-full backdrop-filter backdrop-blur-lg bg-opacity-10 bg-slate-100' : ' top-[0px] w-full h-[100px] lg:h-[200px] lg:pt-10 md:text-[10px]' }`}
+      className={`flex flex-row items-center justify-center space-x-5 fixed top-0 left-0 right-0 z-30 transition-all duration-300${scrolled ? ' w-[40%] 2xl:w-[65%] h-[100px] lg:space-x-2 lg:h-[50px] mt-[50px] 2xl:text-[10px] mx-auto rounded-full backdrop-filter backdrop-blur-lg bg-opacity-10 bg-slate-100' : ' top-[0px] w-full h-[100px] lg:h-[200px] lg:pt-10 md:text-[10px]' }`}
     >
       <div className={`flex flex-row items-center justify-between rounded-full h-20 w-20 overflow-hidden z-30 ${scrolled ?`md:h-0 md:w-0`: `h-20 w-20` }`}>
         <Logo/>
