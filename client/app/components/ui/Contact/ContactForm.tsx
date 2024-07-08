@@ -22,6 +22,7 @@ const ContactForm: React.FC = () => {
       <form ref={form} onSubmit={handleSubmit}>
         <div className="mb-10 flex flex-row w-full">
           <input
+            required
             type="text"
             name="name"
             id="name"
@@ -29,6 +30,7 @@ const ContactForm: React.FC = () => {
             className="mt-1 p-2 mr-4 w-full border bg-black dark:bg-slate-300 border-gray-300 shadow-lg focus:outline-none focus:ring-primary focus:border-primary sm:text-sm"
           />
           <input
+            required
             type="email"
             name="email"
             id="email"
@@ -38,6 +40,8 @@ const ContactForm: React.FC = () => {
         </div>
         <div className="mb-10">
           <input
+            type="text"
+            required
             id="subject"
             name="subject"
             placeholder="Subject"
@@ -46,6 +50,7 @@ const ContactForm: React.FC = () => {
         </div>
         <div className="mb-10">
           <textarea
+            required
             id="message"
             name="message"
             placeholder="Enter your message"
