@@ -8,8 +8,8 @@ const ResumeButton = () => {
   
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/assets/Resume.pdf';
-    link.download = 'Resume.pdf';
+    link.href = '/Resume.pdf';
+    link.download = '/Resume.pdf';
     link.click();
   }
   
