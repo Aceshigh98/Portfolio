@@ -18,7 +18,7 @@ export const useSubmit = () => {
     // These values are set in the .env file
     const serviceId = "service_uhnoh8g"
     const templateId = "template_msi8g4l"
-    const userId = "YzywJatqjeavxwSIw"
+    const userId = "Cxiuqam0ddovJ4uSe"
 
     if (!serviceId || !templateId || !userId) {
       console.error('EmailJS is not configured properly.');
