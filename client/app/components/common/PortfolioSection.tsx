@@ -10,12 +10,12 @@ const PortfolioSection = ({ id }: { id: string }) => {
   // Card Object
   const obj = {
     card1: {
-      title: 'Dashboard',
-      description: 'This is a Dashboard that displays real time data of Bitcoin using a public REST-API that I built.',
-      image: '/dashboard.png', 
-      icon: null,
-      link: 'https://www.aceshighbitcoin.com',
-      github: 'https://github.com/Aceshigh98/Bitcoin-Dashboard'
+      title: 'Ecommerce Site',
+      description: 'This application is an Ecommerce site that allows users to browse products, add them to their cart, and checkout. It uses Stripe API for checkout, and Auth.js to allow users to login and create accounts with their Google accounts.',
+      image: '/aces-cigars.png',
+      icon: null, 
+      link: 'https://www.aces-cigars.com',
+      github: 'https://github.com/Aceshigh98/Ecommerce-Project'
     },
     card2: {
       title: 'Hashview',
@@ -26,6 +26,15 @@ const PortfolioSection = ({ id }: { id: string }) => {
       github: 'https://github.com/Aceshigh98/Hashview'
     },
     card3: {
+      title: 'Dashboard',
+      description: 'This is a Dashboard that displays real time data of Bitcoin using a public REST-API that I built.',
+      image: '/dashboard.png', 
+      icon: null,
+      link: 'https://www.aceshighbitcoin.com',
+      github: 'https://github.com/Aceshigh98/Bitcoin-Dashboard'
+    },
+    
+    card4: {
       title: 'Workout Application',
       description: 'This Application is currently under development! ',
       icon: <MdConstruction className='h-[50%] w-full'/>,  
@@ -33,14 +42,7 @@ const PortfolioSection = ({ id }: { id: string }) => {
       link: '',
       github: ''
     },
-    card4: {
-      title: 'Ecommerce Site',
-      description: 'This Application will be under development soon. Stay tuned!',
-      image: '',
-      icon: <MdConstruction className='h-[50%] w-full'/>, 
-      link: '',
-      github: ''
-    }
+    
   };
 
   return (
